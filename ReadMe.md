@@ -7,11 +7,14 @@
 1. 组件在src/components文件夹下定义，比如新建slider组件：
 
 目录结构
+
+<pre>
     - slider
         - index.js //入口文件
         - slider.js //组件js
         - slider.less/css  //组件样式
         - img
+</pre>
 
 2. 新增组件在webpack.config.js 和 webpack.production.config.js增加开发环境和生产环境打包入口
 
