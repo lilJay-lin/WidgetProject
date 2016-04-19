@@ -14,7 +14,7 @@ module.exports = {
     resolve: {
         root: [ APP_PATH, NODE_MODULES],
         alias: {},
-        extensions: ['', '.js', '.css', '.scss', '.ejs', '.png', '.jpg']
+        extensions: ['', '.js', 'jsx', '.css', '.scss', '.ejs', '.png', '.jpg']
     },
     entry: {
         'slider': path.resolve(APP_COMPONENT, 'Slider')
@@ -46,7 +46,7 @@ module.exports = {
                 loader: 'babel',
                 include:  APP_PATH,
                 query: {
-                    presets: ['es2015']
+                    presets: ['es2015', 'react']
                 }
             }
         ]

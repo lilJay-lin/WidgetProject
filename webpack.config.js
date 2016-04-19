@@ -15,10 +15,10 @@ module.exports = {
     resolve: {
         root: [ APP_PATH, NODE_MODULES],
         alias: {},
-        extensions: ['', '.js', '.css', '.scss', '.ejs', '.png', '.jpg']
+        extensions: ['', '.js', 'jsx', '.css', '.scss', '.ejs', '.png', '.jpg']
     },
     entry: {
-        'slider': path.resolve(APP_COMPONENT, 'Slider')
+        'activity': path.resolve(APP_COMPONENT, 'activity')
     },
     output: {
         path: BUILD_PATH,
@@ -53,7 +53,7 @@ module.exports = {
                 loader: 'babel',
                 include:  APP_PATH,
                 query: {
-                    presets: ['es2015']
+                    presets: ['es2015', 'react']
                 }
             }
         ]
@@ -94,7 +94,7 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html',
             inject: 'body',
-            chunks: ['slider']
+            chunks: ['activity']
         })
     ]
 };
