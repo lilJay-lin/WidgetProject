@@ -25,17 +25,17 @@ module.exports = {
         filename: '[name].[hash].js',
         chunkFilename:  '[chunkhash:8].chunk.min.js'
     },
-    jshint: {
+/*    jshint: {
         "esnext": true
-    },
+    },*/
     module: {
-        preLoaders:[
+/*        preLoaders:[
             {
                 test: /\.jsx?$/,
                 include: APP_PATH,
                 loaders: ['jshint-loader']
             }
-        ],
+        ],*/
         loaders: [
             {
                 test: /\.(css|less)$/,
@@ -51,10 +51,7 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 loader: 'babel',
-                include:  APP_PATH,
-                query: {
-                    presets: ['es2015', 'react']
-                }
+                include:  APP_PATH
             }
         ]
     },
