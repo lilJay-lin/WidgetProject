@@ -1,8 +1,9 @@
 /**
  * Created by linxiaojie on 2016/4/26.
  */
-import {each, isArrayLike} from '../util/util';
-
+import _ from '../util/util';
+let each = _.each;
+let isArrayLike = _.isArrayLike;
 /*
 * TODO: document.querySelectorAll 使用代理函数，执行会报错
 * 节点选择器

@@ -45,4 +45,25 @@ function each(obj, iteratee, context){
     }
 }
 
-export {each, isArrayLike};
+/*
+ * 判断对象类型
+ */
+let _ = {};
+let toString = Object.prototype.toString;
+function typeOf(type){
+    return function(obj){
+        if(obj == null){
+            obj = String(obj);
+        }
+        return toString.call(obj) === type
+    }
+};
+each(['Array', 'Object', 'Function', 'Null', 'String'], function(type){
+    _['is' + type] = typeOf('[object ' + type + ']');
+});
+
+_.each = each;
+_.isArrayLike = isArrayLike;
+_.proxy = proxy;
+
+export {_ as default};

@@ -3,7 +3,13 @@
  */
 
 import $ from '../dom/dom';
+import util from './util';
 
+/*
 window.util = {
     $: $
-};
+};*/
+
+util.$ = $;
+
+window.util = util;
