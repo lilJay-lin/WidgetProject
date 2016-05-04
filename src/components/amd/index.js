@@ -7,7 +7,8 @@ import {config, define, require} from './amd';
 window.define = define;
 window.require = require;
 
-config({
+/*test*/
+/*config({
    baseUrl: './amd',
    package: [
       {
@@ -18,7 +19,7 @@ config({
    shim: {
       'some/module': {
          deps: ['b', 'path'],
-         exports: 'some.module', /*默认值*/
+         exports: 'some.module', /!*默认值*!/
          init: function(a, path){
             console.log('some/module is loaded');
             console.log('some/module deps path:' + path.loaded);
@@ -36,8 +37,5 @@ config({
            'path': 'path1.0'
        }
    }
-});
-/*define(['a'], function(){
-   console.log('i am index');
 });*/
 
