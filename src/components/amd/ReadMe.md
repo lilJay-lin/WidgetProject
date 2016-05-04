@@ -1,10 +1,14 @@
 # AMD
 
-TODO: ~定义模块，异步加载模块~
-TODO: ~支持config配置baseurl和package~
-TODO: ~shim与paths的支持~
-TODO: ~map多版本支持~
-TODO: ~环行依赖判断~
+TODO: ~~定义模块，异步加载模块~~
+
+TODO: ~~支持config配置baseurl和package~~
+
+TODO: ~~shim与paths的支持~~
+
+TODO: ~~map多版本支持~~
+
+TODO: ~~环行依赖判断~~
 
 参考：http://www.cnblogs.com/dojo-lzz/p/5138108.html
 
