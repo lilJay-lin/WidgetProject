@@ -7,6 +7,6 @@ TODO: ~~AMD~~
 
 TODO: ~~双向绑定~~
 
-TODO: 异步编程
+TODO: ~~异步回调~~
 
 TODO: 虚拟DOM
